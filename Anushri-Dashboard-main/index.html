@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <p class="logo"><span>A</span>-Dashboard</p>
+      <a href="#" class="icon-a"
+        ><i class="fa fa-dashboard icons"></i> Dashboard</a
+      >
+      <a href="#" class="icon-a"><i class="fa fa-users icons"></i> Customers</a>
+      <a href="#" class="icon-a"><i class="fa fa-list icons"></i> Projects</a>
+      <a href="#" class="icon-a"
+        ><i class="fa fa-shopping-bag icons"></i> Orders</a
+      >
+      <a href="#" class="icon-a"><i class="fa fa-tasks icons"></i> Inventory</a>
+      <a href="#" class="icon-a"><i class="fa fa-user icons"></i> Accounts</a>
+      <a href="login.html" class="icon-a"><i class="fa fa-list-alt icons"></i>Login</a>
+    </div>
+    <div id="main">
+      <div class="head">
+        <div class="col-div-6">
+          <span
+            style="font-size: 30px; cursor: pointer; color: white"
+            class="nav"
+            >☰ Dashboard</span
+          >
+          <span
+            style="font-size: 30px; cursor: pointer; color: white"
+            class="nav2"
+            >☰ Dashboard</span
+          >
+        </div>
+
+        <div class="col-div-6">
+          <div class="profile">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.a9rTxyCNziv_eK1KV5H88gHaHf&pid=Api&rs=1&c=1&qlt=95&w=118&h=119" class="pro-img" />
+            <p>Anushri Khadke <span>Dashboard</span></p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="clearfix"></div>
+      <br />
+
+      <div class="infobox">
+        <div class="col-div-3">
+          <div class="box">
+            <p>67<br /><span>Customers</span></p>
+            <i class="fa fa-users box-icon"></i>
+          </div>
+        </div>
+
+        <div class="col-div-3">
+          <div class="box">
+            <p>88<br /><span>Projects</span></p>
+            <i class="fa fa-list box-icon"></i>
+          </div>
+        </div>
+
+        <div class="col-div-3">
+          <div class="box">
+            <p>99<br /><span>Orders</span></p>
+            <i class="fa fa-shopping-bag box-icon"></i>
+          </div>
+        </div>
+
+        <div class="col-div-3">
+          <div class="box">
+            <p>78<br /><span>Tasks</span></p>
+            <i class="fa fa-tasks box-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <br /><br />
+
+      <div class="container">
+        <div class="left-box">
+          <div id="myGrid" class="ag-theme-quartz-dark" style="height: 350px;"></div>
+        </div>
+
+        <div class="right-box">
+          <!-- <div class="content-box">
+            <div id="chart_lab"></div>
+            <div id="chart_color"></div>
+            <div id="chart_calarity"></div>
+            <div id="chart_polish"></div>
+          </div>
+        </div> -->
+        <span class="filter-heading">Shape</span>
+        <div class="shape-filter filter" id="shape-filter" style="flex-wrap: nowrap;"></div>
+        <span class="filter-heading">color</span>
+        <div class="color-filter " id="color-filter"></div>
+
+        <span class="filter-heading">calarity</span>
+        <div class="clarity-filter " id="clarity-filter"></div>
+
+        <span class="filter-heading">cut</span>
+        <div class="cut-filter " id="cut-filter"></div>
+
+        <span class="filter-heading">carat</span>
+        <div class="carat-filter " id="carat-filter">
+          <label for="from" id="carat-label">From</label>
+          <input type="number" name="" id="from">
+          <label for="to" id="carat-label">To</label>
+          <input type="number" name="" id="to">
+        </div>
+
+        <span class="filter-heading">polish</span>
+        <div class="polish-filter " id="polish-filter"></div>
+                
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src = "dashboard.js" type="module"></script>
+   <script src="charts.js" type="module"></script>
+  </body>
+</html>
