@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+li {
+  float: left;
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#1b203d;
+}
+
+.active {
+  background-color: #1b203d;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf1;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.signup-card {
+  background-color: #1b203d;
+  width: 900px;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 650px;
+}
+
+.signup-image {
+  flex: 90;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  height:600px;
+}
+
+.signup-image img {
+  width: 400px;
+  height: 560px;
+}
+
+.signup-form {
+  flex: 1;
+}
+
+.form-container {
+  background-color: rgba(0, 174, 255, 0.304);
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 620px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"],
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 174, 255, 0.304);
+  border-radius: 4px;
+}
+
+.form-container .button-container {
+  text-align: center;
+}
+
+.form-container .button-container button {
+  padding: 10px 20px;
+  background-color: #fff4d4;
+  color:black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container .button-container button:first-child {
+  margin-right: 10px;
+}
+
+.form-container textarea {
+width: 100%;
+border: 1px solid rgba(0, 174, 255, 0.304);
+border-radius: 4px;
+resize: vertical; 
+}
+
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  text-decoration: none;
+  color:black;
+}
+
+
+@media (max-width:768px) {
+  .signup-card {
+    width: 80vw;
+    margin: auto;
+    display: block;
+    height: auto;
+  }
+  .signup-image{
+    display: none;
+    
+  }
+}
