@@ -27,6 +27,9 @@ document.querySelector(".nav2").addEventListener("click", function () {
 const gridOptions = {
   rowData: DiamondData,
   columnDefs: columnDefs,
+  defaultColDef: {
+    filter: true,
+  },
 };
 
 // Your Javascript code to create the grid

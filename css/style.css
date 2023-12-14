@@ -192,6 +192,7 @@ body {
   font-weight: 500;
   margin: 10px;
   text-transform: capitalize;
+  color: rgba(0, 225, 255, 0.741);
 }
 .filter {
   display: flex;
@@ -213,6 +214,7 @@ input[type="checkbox"] {
   text-align: center;
   font-size: 15px;
   font-weight: bolder;
+  color: rgba(141, 231, 243, 0.741);
 }
 label {
   font-family: Arial, sans-serif;
